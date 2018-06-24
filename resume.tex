@@ -73,12 +73,53 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 
 \headedsection  % sets the header for the section and includes any subsections
   {\href{https://wavecomp.ai/}{Wave Computing - Research \& Development Software Engineer}}
-  {\textsc{Campbell, CA}} {%
+  {\textsc{Campbell, CA}} {
+  \bodytext{Wave Computing is developing the next-generation of solutions for speeding up Deep Learning applications using Dataflow Processing Units (DPUs), which contain thousands of interconnected dataflow Processing Elements (PEs). DPUs power Wave Computing's custom appliance for developing, testing, and deploying Deep Learning models. I develop the computational- and data movement- software kernels which are executed by Wave Computing's Dataflow Computers for Deep Learning acceleration.}
 
   \headedsubsection
-    {Deep Learning Computational Kernel Development}
+    {Deep Learning Kernel Development}
     {Dec \apo17 -- present}
-    {\bodytext{Wave Computing is developing the next-generation of solutions for speeding up Deep Learning applications using Dataflow Processing Units (DPUs), which contain thousands of interconnected dataflow Processing Elements (PEs). DPUs power Wave Computing's custom appliance for developing, testing, and deploying Deep Learning models. I develop agents (kernel and data movement software kernels) which are executed by Wave Computing's Dataflow Computers for Deep Learning acceleration.}}
+    {\bodytext{I have developed compute-kernels for
+    \begin{itemize}
+      \item 1x1 Convolution (forward direction)
+      \item Matrix Multiplication (forward direction)
+      \item ReLU (forward \& reverse direction)
+      \item Concatenation (forward direction)
+      \item Fork (forward direction)
+    \end{itemize}
+      }}
+
+  \headedsubsection
+    {Deep Learning Library Development}
+    {Dec \apo17 -- present}
+    {\bodytext{I have worked extensively on the supporting library for the Deep Learning compute kernels.
+    \begin{itemize}
+      \item Owner of the libary of routines for performing IEEE 754 rounding.
+      \item Owner of the library of routines for changing precision.
+      \item Authored various block Matrix Multiplication operations.
+      \item Authored various multi-byte addition operations.
+      \item Authored various multi-byte shift operations.
+    \end{itemize}
+      }}
+
+  \headedsubsection
+    {Management Role}
+    {March \apo18 -- present}
+    {\bodytext{I assist my superior with the management of the kernel team consisting of seven engineers. My duties include
+    \begin{itemize}
+      \item maintaining the schedule of work being done by the members of the team.
+      \item assisting in the planning of new work items.
+      \item identifying \& interviewing new compute-kernel team candidates.
+      \item report on the progress of the compute-kernel team to the VP of product engineering.
+    \end{itemize}
+    Major accomplishments include
+    \begin{itemize}
+      \item I developed a workflow for creating new compute-kernels.
+      \item I integrated the schedule of work into a JIRA managed project.
+    \end{itemize}
+    The outcome of my efforts is better project management leading to a significant reduction in the time taken to develop new compute-kernels.
+      }}
+
 }
 
 \headedsection  % sets the header for the section and includes any subsections
@@ -211,6 +252,10 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
     {\href{https://www.coursera.org/}{\textsc{coursera.org}}} {
 
       \headedsubsection
+        {\href{https://www.coursera.org/account/accomplishments/specialization/9WCEB5PYL6VT}{Deep Learning Specialization}}
+        {\bodytext{Certificate earned on June 24, 2018.}}
+
+      \headedsubsection
         {\href{https://www.coursera.org/account/accomplishments/verify/JSDREA8QF6XG}{Neural Networks and Deep Learning}}
         {\bodytext{Certificate earned on November 4, 2017.}}
 
@@ -223,8 +268,12 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
         {\bodytext{Certificate earned on December 17, 2017.}}
 
       \headedsubsection
-        {\href{https://www.coursera.org/account/accomplishments/records/GNUR9KQXTNPS}{Convolutional Neural Networks}}
+        {\href{https://www.coursera.org/account/accomplishments/verify/GNUR9KQXTNPS}{Convolutional Neural Networks}}
         {\bodytext{Certificate earned on January 22, 2018.}}
+
+      \headedsubsection
+        {\href{https://www.coursera.org/account/accomplishments/verify/RE53JG7A9ZKV}{Sequence Models}}
+        {\bodytext{Certificate earned on June 24, 2018.}}
 
     }
 
@@ -235,7 +284,7 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 
   \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Technical expertise:}
-  {My expertise lies in the design \& implementation of high-performance scientific/numerical software. I am skilled at applying statistical analysis and machine learning methodology to complex data and am familiar with developing Deep Learning applications using TensorFlow \& Keras. Used to working with(in) teams, I am fond of using Agile methodologies (Scrum) and continuous integration (Jenkins) to manage \& deliver on-time \& bug-free software. I enjoy writing C\nsp, \CPP\nsp, \& Python, and am learning Julia/\nsp Go/\nsp Io/\nsp Prolog. I have excellent knowledge of parallelization technologies:\ OpenMP, \CPP11 threads, POSIX threads, \& MPI as well as experience programming on novel computing platforms such Wave Computing's Dataflow Processing Units (DPU) \& Intel's Xeon Phi (Knight's Corner \& Knight's Landing). I have extensive knowledge \& experience with various programming toolchains including the GNU toolchain, Intel toolchain, LLVM toolchain, PGI toolchain, AOCC toolchain, Valgrind, gdb, make, SCons etc.... My preferred platform is Linux (16 years of development experience) although I have also developed on Mac OSX (7 years). I am very comfortable with writing in \LaTeX \ (13 years of experience) and have a good understanding of the UNIX programming environment and tools (Memory management, process spawning, etc...)}
+  {My expertise lies in the design \& implementation of high-performance scientific/numerical software. I am skilled at applying statistical analysis and machine learning methodology to complex data and am familiar with developing Deep Learning applications using TensorFlow \& Keras. Used to working with(in) teams, I am fond of using Agile methodologies (Scrum) and continuous integration (Jenkins) to manage \& deliver on-time \& bug-free software. I enjoy writing Flow Graph, C\nsp, \CPP\nsp, \& Python, and am learning Julia/\nsp Go/\nsp Io/\nsp Prolog. I have excellent knowledge of parallelization technologies:\ OpenMP, \CPP11 threads, POSIX threads, \& MPI as well as experience programming on novel computing platforms such Wave Computing's Dataflow Processing Units (DPU) \& Intel's Xeon Phi (Knight's Corner \& Knight's Landing). I have extensive knowledge \& experience with various programming toolchains including the GNU toolchain, Intel toolchain, LLVM toolchain, PGI toolchain, AOCC toolchain, Valgrind, gdb, make, SCons etc.... My preferred platform is Linux (16 years of development experience) although I have also developed on Mac OSX (7 years). I am very comfortable with writing in \LaTeX \ (13 years of experience) and have a good understanding of the UNIX programming environment and tools (Memory management, process spawning, etc...)}
 
   \vspace{1.0em}
 
@@ -249,8 +298,20 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
     {Natural languages:}
     {English \emph{(native language)} and Hindi \emph{(native language)}.}
 
-\spacedhrule{1.6em}{-0.8em}
+\spacedhrule{1.0em}{-0.4em}
 
+\roottitle{Service}
+
+\inlineheadsection
+  {\href{https://www.nsf.gov/}{The National Science Foundation}}{Served on a grant review panel for the Division of Astronomical Sciences.}
+
+\inlineheadsection
+  {\href{http://iopscience.iop.org/journal/0004-637X}{The Astrophysical Journal}}{Peer reviewed multiple publications for this journal.}
+
+\inlineheadsection
+  {\href{https://academic.oup.com/mnras}{Monthly Notices of the Royal Astronomical Society}}{Peer reviewed publications for this journal.}
+
+\spacedhrule{2.0em}{0.2em}
 
 \roottitle{Publications}
 
@@ -284,17 +345,9 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 \inlineheadsection
   {Local electronic and optical behaviors of a-plane GaN grown via epitaxial lateral overgrowrth}{\href{http://dx.doi.org/10.1063/1.2429901}{Appl. Phys. Lett., 90, 011913}, 2007}
 
-\spacedhrule{1.0em}{-0.4em}
+\pagebreak
 
-\roottitle{Service}
-
-\inlineheadsection
-  {The Astrophysical Journal}{Regular peer reviewer}
-
-\inlineheadsection
-  {Monthly Notices of the Royal Astronomical Society}{Regular peer reviewer}
-
-\spacedhrule{1.0em}{-0.4em}
+\spacedhrule{2.0em}{0.2em}
 
 \roottitle{Grants}
 
@@ -304,7 +357,7 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 \inlineheadsection
   {NASA Grant NNX14AL56G}{Helped write proposal for awarded NASA Grant NNX14AL56G. Grant was used to fund my Ph.D. research.}
 
-\spacedhrule{1.0em}{-0.4em}
+\spacedhrule{2.0em}{0.2em}
 
 \roottitle{Presentations}
 
