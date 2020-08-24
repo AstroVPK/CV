@@ -39,7 +39,7 @@
 Sunnyvale, CA 94086\sbull
 USA
 
-\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+\spacedhrule{2.0em}{0.2em}  % a horizontal line with some vertical spacing before and after
 
 
 \begin{comment}
@@ -72,90 +72,43 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 \roottitle{Experience}
 
 \headedsection  % sets the header for the section and includes any subsections
-  {\href{https://wavecomp.ai/}{Intel Corporation - Senior Deep Learning Software Engineer}}
+  {\href{https://www.intel.com/content/www/us/en/homepage.html}{Intel Corporation - Senior Deep Learning Software Engineer}}
   {\textsc{Santa Clara, CA}} {
-  \bodytext{I work in the Machine Learning \& Translation (MLT) group in IAGS.}
+  \bodytext{I work in the Machine Learning Performance (MLP) organization in the Machine Learning Distributed Compute (MLDC) group on accelerating Deep Learning workloads on Intel's Xe-HPC discrete accelerator cards for Deep Learning \& High-Performance Computing. My role focuses on pre-Si performance optimization via hardware-software co-design. I develop \& test computation- \& communication-kernels using hardware simulators.}
 
   \headedsubsection
-    {Deep Learning Kernel Development}
-    {Apr \apo19 -- present}
-    {\bodytext{I am working on compute-kernels for distributed Deep Learning for upcoming Intel GPU products.
-      }}
-  %
-  % \headedsubsection
-  %   {Deep Learning Library Development}
-  %   {Dec \apo17 -- Apr \apo19}
-  %   {\bodytext{I have worked extensively on the supporting library for the Deep Learning compute kernels.
-  %   \begin{itemize}
-  %     \item Owner of the libary of routines for performing IEEE 754 rounding.
-  %     \item Owner of the library of routines for changing precision.
-  %     \item Authored various block Matrix Multiplication operations.
-  %     \item Authored various multi-byte addition operations.
-  %     \item Authored various multi-byte shift operations.
-  %   \end{itemize}
-  %     }}
-  %
-  % \headedsubsection
-  %   {Tools Development}
-  %   {Nov \apo18 -- Apr \apo19}
-  %   {\bodytext{I have developed tools for
-  %   \begin{itemize}
-  %     \item Simulating (functional \& performance) Deep Learning kernels.
-  %     \item Visualizing the placement \& routing performed by JitPR.
-  %   \end{itemize}
-  %     }}
-  %
-  % \headedsubsection
-  %   {Management Role}
-  %   {March \apo18 -- Nov \apo18}
-  %   {\bodytext{I assist my superior with the management of the kernel team consisting of seven engineers. My duties include
-  %   \begin{itemize}
-  %     \item maintaining the schedule of work being done by the members of the team.
-  %     \item assisting in the planning of new work items.
-  %     \item identifying \& interviewing new compute-kernel team candidates.
-  %     \item report on the progress of the compute-kernel team to the VP of product engineering.
-  %   \end{itemize}
-  %   Major accomplishments include
-  %   \begin{itemize}
-  %     \item I developed a workflow for creating new compute-kernels.
-  %     \item I integrated the schedule of work into a JIRA managed project.
-  %   \end{itemize}
-  %   The outcome of my efforts is better project management leading to a significant reduction in the time taken to develop new compute-kernels.
-  %     }}
+  {Hardware-Software Co-Design}
+  {April \apo19 -- present}
+  {\bodytext{My responsibilities include
+  \begin{itemize}
+    \item defining architectural features for enhancing the architecture for Deep Learning workloads.
+    \item driving adoption of best practices, i.e. architecture-specific know-how, in software products.
+    \item evaluating \& projecting pre-Si Deep Learning workload performance.
+    \item creating the overall strategy for distributing Deep Learning workloads across multiple-cards \& -nodes i.e. scale-up/scale-out strategy.
+  \end{itemize}
+  }}
 
 }
 
 \headedsection  % sets the header for the section and includes any subsections
   {\href{https://wavecomp.ai/}{Wave Computing - Senior Staff Research \& Development Software Engineer}}
   {\textsc{Campbell, CA}} {
-  \bodytext{Wave Computing is developing the next-generation of solutions for speeding up Deep Learning applications using Dataflow Processing Units (DPUs), which contain thousands of interconnected dataflow Processing Elements (PEs). DPUs power Wave Computing's custom appliance for developing, testing, and deploying Deep Learning models. I develop the computational- and data movement- software kernels which are executed by Wave Computing's Dataflow Computers for Deep Learning acceleration.}
+  \bodytext{Wave Computing is developing the next-generation of solutions for speeding up Deep Learning applications using Dataflow Processing Units (DPUs), which contain thousands of interconnected dataflow Processing Elements (PEs). DPUs power Wave Computing's custom appliance for developing, testing, and deploying Deep Learning models. I use to develop the compute- and data movement- software kernels which are executed by Wave Computing's Dataflow Processing Units (DPUs) for Deep Learning acceleration.}
 
   \headedsubsection
-    {Deep Learning Kernel Development}
-    {Dec \apo17 -- Apr \apo19}
-    {\bodytext{I have developed compute-kernels for
+    {Deep Learning Kernel- \& Library-Development}
+    {Dec \apo17 -- April \apo19}
+    {\bodytext{I have worked extensively on compute- \& communicate-kernels, tools, and the supporting library for enabling Deep Learning workloads on Wave's DPUs.
     \begin{itemize}
-      \item Fully Connected (forward direction)
-      \item Average Pool (forward direction)
-      \item 1x1 Convolution (forward direction)
-      \item ReLU (forward \& reverse direction)
-      \item Concatenation (forward direction)
-      \item Fork (forward direction)
-    \end{itemize}
-      }}
-
-  \headedsubsection
-    {Deep Learning Library Development}
-    {Dec \apo17 -- Apr \apo19}
-    {\bodytext{I have worked extensively on the supporting library for the Deep Learning compute kernels.
-    \begin{itemize}
+      \item Developed compute kernels for various Deep Learning layers such as Average Pooling, Convolutions, Feed-Forward, Activations, Concatenation \& fork, etc...
+      \item Developed a tool for visualizing the place \& route performed by JitPR.
       \item Owner of the libary of routines for performing IEEE 754 rounding.
       \item Owner of the library of routines for changing precision.
       \item Authored various block Matrix Multiplication operations.
       \item Authored various multi-byte addition operations.
       \item Authored various multi-byte shift operations.
     \end{itemize}
-      }}
+    }}
 
   \headedsubsection
     {Tools Development}
@@ -169,8 +122,8 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 
   \headedsubsection
     {Management Role}
-    {March \apo18 -- Nov \apo18}
-    {\bodytext{I assist my superior with the management of the kernel team consisting of seven engineers. My duties include
+    {March \apo18 -- April \apo19}
+    {\bodytext{I assisted my superior with the management of the kernel team consisting of seven engineers. My duties included
     \begin{itemize}
       \item maintaining the schedule of work being done by the members of the team.
       \item assisting in the planning of new work items.
@@ -183,7 +136,7 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
       \item I integrated the schedule of work into a JIRA managed project.
     \end{itemize}
     The outcome of my efforts is better project management leading to a significant reduction in the time taken to develop new compute-kernels.
-      }}
+    }}
 
 }
 
@@ -274,7 +227,7 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 }
 
 
-\spacedhrule{0.4em}{-0.4em}
+\spacedhrule{2.0em}{0.2em}
 
 
 \roottitle{Education}
@@ -307,7 +260,7 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 }
 
 
-\spacedhrule{1.0em}{-0.4em}
+\spacedhrule{2.0em}{0.2em}
 
 
 \roottitle{Certifications}
@@ -343,13 +296,13 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
     }
 
 
-\spacedhrule{1.0em}{-0.4em}
+\spacedhrule{2.0em}{0.2em}
 
 \roottitle{Skills}
 
   \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
   {Technical expertise:}
-  {My expertise lies in the design \& implementation of high-performance scientific/numerical software. I am skilled at applying statistical analysis and machine learning methodology to complex data and am familiar with developing Deep Learning applications using TensorFlow \& Keras. Used to working with(in) teams, I am fond of using Agile methodologies (Scrum) and continuous integration (Jenkins) to manage \& deliver on-time \& bug-free software. I enjoy writing Flow Graph, C\nsp, \CPP\nsp, \& Python, and am learning Julia/\nsp Go/\nsp Io/\nsp Prolog. I have excellent knowledge of parallelization technologies:\ OpenMP, \CPP11 threads, POSIX threads, \& MPI as well as experience programming on novel computing platforms such Wave Computing's Dataflow Processing Units (DPU) \& Intel's Xeon Phi (Knight's Corner \& Knight's Landing). I have extensive knowledge \& experience with various programming toolchains including the GNU toolchain, Intel toolchain, LLVM toolchain, PGI toolchain, AOCC toolchain, Valgrind, gdb, make, SCons etc.... My preferred platform is Linux (16 years of development experience) although I have also developed on Mac OSX (7 years). I am very comfortable with writing in \LaTeX \ (13 years of experience) and have a good understanding of the UNIX programming environment and tools (Memory management, process spawning, etc...)}
+  {My expertise lies in the research, design \& implementation of high-performance scientific/numerical software on exotic, highly-parallel, and distributed hardware. Current interests include hardware-software co-design, particularly in the area of AI accelerators. I earned my doctorate in Astrophysics by applying mathematial \& statistical analysis and machine learning to complex time-domain data. While I am familiar with developing Deep Learning applications using TensorFlow \& PyTorch, my speciality lies in knowledge of the innards of these frameworks \& their execution on various accelarators suh as GPUs, DPUs, etc.... Used to working with(in) teams, I am fond of using Agile methodologies (Scrum) and continuous integration (Jenkins) to manage \& deliver on-time \& bug-free software. I enjoy writing C-For-Metal, OpenCL, FlowGraph, C\nsp, \CPP\nsp, \& Python, and am learning Julia/\nsp CUDA/\nsp Go/\nsp Io/\nsp Prolog. I have excellent knowledge of parallelization technologies:\ OpenMP, MPI, \CPP11 threads, \& POSIX threads, \& hardware architecture. Over the years, I have gained extensive experience programming on novel computing platforms such Intel's Xe-HPC accelerators , Wave Computing's Dataflow Processing Units (DPU) \& Intel's Xeon Phi (Knight's Corner \& Knight's Landing). I have extensive knowledge \& experience with various programming toolchains including the Intel toolchain, GNU toolchain, LLVM toolchain, PGI toolchain, AOCC toolchain, Valgrind, gdb, make, SCons etc.... My preferred development platform is Linux (> 15 years of development experience) although I have also developed on Windows (1 year of dev-ex), \& Mac OSX (7 years of de-ex). I am very comfortable with writing in \LaTeX \ (> 15 years of experience) and have a good understanding of the UNIX programming environment and tools (memory-management, process spawning, etc...)}
 
   \vspace{1.0em}
 
@@ -363,7 +316,7 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
     {Natural languages:}
     {English \emph{(native language)} and Hindi \emph{(native language)}.}
 
-\spacedhrule{1.0em}{-0.4em}
+\spacedhrule{2.0em}{0.2em}
 
 \roottitle{Service}
 
@@ -371,12 +324,14 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
   {\href{https://www.nsf.gov/}{The National Science Foundation}}{Served on a grant review panel for the Division of Astronomical Sciences.}
 
 \inlineheadsection
-  {\href{http://iopscience.iop.org/journal/0004-637X}{The Astrophysical Journal}}{Peer reviewed multiple publications for this journal.}
+  {\href{http://iopscience.iop.org/journal/0004-637X}{The Astrophysical Journal}}{Peer reviewed multiple publications.}
 
 \inlineheadsection
-  {\href{https://academic.oup.com/mnras}{Monthly Notices of the Royal Astronomical Society}}{Peer reviewed publications for this journal.}
+  {\href{https://academic.oup.com/mnras}{Monthly Notices of the Royal Astronomical Society}}{Peer reviewed a publication.}
 
 \spacedhrule{2.0em}{0.2em}
+
+\pagebreak
 
 \roottitle{Publications}
 
@@ -410,7 +365,7 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 \inlineheadsection
   {Local electronic and optical behaviors of a-plane GaN grown via epitaxial lateral overgrowrth}{\href{http://dx.doi.org/10.1063/1.2429901}{Appl. Phys. Lett., 90, 011913}, 2007}
 
-\pagebreak
+% \pagebreak
 
 \spacedhrule{2.0em}{0.2em}
 
@@ -425,6 +380,9 @@ Bitten by the high-performance computing (HPC) bug, I recently began a research 
 \spacedhrule{2.0em}{0.2em}
 
 \roottitle{Presentations}
+
+\inlineheadsection
+  {\href{https://www.youtube.com/watch?v=lVLn9am93Qs}{Webinar on Intel \& A Day in the Life of a Deep Learnin Software Engineer}}{HiCounselor, September 24th, 2019, Sunnyvale, CA}
 
 \inlineheadsection
   {Applications of High Performance Computing in Artificial Intelligence}{Rajasthan Student Startup Exposure Program 2018 (RSSEP2018), September 8th, 2018, San Jose, CA}
